@@ -55,6 +55,7 @@ type Step struct {
 	Ingredients []Ingredient // list of ingredients used in the step
 	Cookware    []Cookware   // list of cookware used in the step
 	Comments    []string     // list of comments
+	Raw         string
 }
 
 // Metadata contains key value map of metadata
@@ -171,6 +172,7 @@ func parseRecipe(line string) (*Step, error) {
 		Timers:      make([]Timer, 0),
 		Ingredients: make([]Ingredient, 0),
 		Cookware:    make([]Cookware, 0),
+		Raw:         line,
 	}
 	skipIndex := -1
 	var directions strings.Builder
