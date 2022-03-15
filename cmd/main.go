@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/aquilax/cooklang-go"
+	"github.com/daverik/cooklang-go"
 )
 
 const OFFSET_INDENT = 4
